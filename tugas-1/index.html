@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Judul tab browser -->
+    <title>Kaela Kovalskia's Fan Game Alpha Test Registration</title>
+    <!-- Hubungkan file CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- <header> adalah tag semantik untuk bagian atas (kop) halaman -->
+    <header class="site-header">
+        <h1>Kaela Kovalskia's Fan Game Alpha Test Registration</h1>
+        <p class="tagline">
+            Sign up to be apart of the [Alpha Tester] Team and give direct feedback to our development crew!
+        </p>
+    </header>
+    
+        <!-- <main> menandakan konten utama dari halaman web -->
+        <main class="container">     
+            <!-- Menambahkan image ke dalam card-->
+            <section class="card">
+                <img src="ela.jpg" width="880px" alt="Kaela Kovalskia">
+            </section>
+
+            <!-- <section> membagi halaman menjadi bagian-bagian atau seksi yang logis -->
+            <section class="card">
+                <h2>About the Game</h2>
+                <p>
+                    This game is a rouge-like hack and slash mania. It will 
+                    feature all members of the Hololive Indonesia branch!
+                </p>
+            </section>
+    
+    <section class="card">
+        <h2>Benfits of being an Alpha Tester for our game:</h2>
+        <!-- <ul> (Unordered List) untuk membuat daftar dengan bullet point -->
+            <ul>
+                <!-- <li> (List Item) adalah item di dalam daftar -->
+                    <li>Early access to our game! (as well as sneak peeks!)</li>
+                    <li>Ability to give direct feedback, suggestions and critics to the development team.</li>
+                    <li>Some add-ons and prizes for when the game goes live!</li>
+                </ul>
+                <p>
+                    Don't forget to join our discord server full of Pemaloes!!<br>
+                    <a href="https://discord.gg/pemaloe">Click here! </a>
+                </p>
+            </section>
+            
+            <section class="card">
+            <h2>Alpha Testers Registration</h2>
+
+            <!-- <form> digunakan untuk membuat formulir input data -->
+            <form id="registration-form" class="form">
+                <!-- Dibungkus di dalam div agar elemen label dan input dapat ditata dengan CSS -->
+                <div class="form-group">
+                    <!-- <label> memberikan keterangan untuk elemen <input> -->
+                    <label for="name">Steam Username</label>
+                    <input id="name" name="name" type="text" placeholder="Enter your Steam username" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="proflink">Steam Profile Link</label>
+                    <!-- type="email" otomatis memvalidasi apakah format input berupa email -->
+                    <input id="proflink" name="profile link" type="link" placeholder="Enter your Steam Profile link" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="level">Experience Level</label>
+                    <!-- <select> membuat dropdown list -->
+                    <select id="level" name="level">
+                        <!-- <option> adalah pilihan-pilihan di dalam dropdown -->
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <div class="form-group form-group-inline">
+                    <label for="join-dc">
+                        <!-- type="checkbox" membuat kotak centang -->
+                        <input id="join-dc" name="join-dc" type="checkbox" />
+                        Join Discord Server?
+                    </label>
+                </div>
+
+                <!-- tombol untuk men-submit (mengirim) form -->
+                <button type="submit" class="btn-primary">
+                    Register
+                </button>
+
+                <!-- Paragraf kosong untuk menampilkan pesan sukses atau error melalui JavaScript -->
+                <p id="error-message" class="message error"></p>
+                <p id="success-message" class="message success"></p>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Registered Participants</h2>
+            <!-- Bagian list ini kosong dan akan diisi secara dinamis menggunakan JavaScript -->
+            <ul id="participants-list" class="participants-list">
+                <!-- Filled by JavaScript -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- <footer> berisi informasi tambahan di bagian bawah halaman -->
+    <footer class="site-footer">
+        <p>Everything is fake except the discord server (teehee) (No, I don't own it).</p>
+    </footer>
+
+    <!-- Menghubungkan file JavaScript agar web menjadi interaktif -->
+    <script src="script.js"></script>
+</body>
+
+</html>
